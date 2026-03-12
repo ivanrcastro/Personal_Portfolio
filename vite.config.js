@@ -1,19 +1,23 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import { fileURLToPath } from 'url';
 import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(), 
+    tailwindcss()
+  ],
   resolve: {
     alias: {
-      // eslint-disable-next-line no-undef
-      "@": path.resolve(__dirname, "./src"), //isto é para fazermos import dos componentes sem ter de por o caminho todo
+      "@": path.resolve(__dirname, "./src"),
     },
-    dedupe: ["react", "react-dom"],
-  },
-  optimizeDeps: {
-    include: ["react", "react-dom", "react-router-dom", "react-router"]
+    // Removi o dedupe e optimizeDeps a menos que tenhas erros específicos de múltiplas versões.
+    // Para um portfólio simples, o Vite lida com isto automaticamente.
   },
 });
