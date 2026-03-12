@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "greetingPrefix": "Hallo, ich bin",
+    "firstName": "Ivan",
+    "lastName": "Castro",
+    "intro": "Ich bin ein Ingenieur für Robotik und Automatisierung mit einer Leidenschaft für innovative Lösungen. Spezialisiert auf SPS, Roboterprogrammierung und Softwareentwicklung. Es bereitet mir Freude, Herausforderungen zu lösen und Technologie intelligenter zu machen.\nMein Ziel ist es, mich als Ingenieur stetig weiterzuentwickeln und an einflussreichen Projekten mitzuwirken.",
+    "scroll": "Scrollen"
+  },
+  "about": {
+    "aboutLine": "Über",
+    "meLine": "mich",
+    "academic": "Akademischer Hintergrund",
+    "contact": "Kontakt aufnehmen",
+    "cv": "Lebenslauf ansehen",
+    "experience": "Erfahrung",
+    "experiences": [
+        {
+            "date": "2023–2024",
+            "role": "Wissenschaftlicher Mitarbeiter (Robotik)",
+            "company": "University of Minho"
+        },
+        {
+            "date": "2024–2025",
+            "role": "Ingenieur für Automatisierung und Robotik",
+            "company": "Bosch Car Multimedia"
+        },
+        {
+            "date": "2025–Heute",
+            "role": "Software- und Automatisierungsingenieur",
+            "company": "Preh Portugal"
+        }
+    ]
+  },
+  "academic": {
+    "bachelor": "Bachelor in Industrieelektronik und Computertechnik",
+    "university": "University of Minho",
+    "bYear": "2019–2022",
+    "master": "Master in Steuerung, Automatisierung und Robotik",
+    "mYear": "2022–2024"
+  }, 
+  "skills": {
+    "skillsList": [
+      { "name": "Beckhoff TwinCAT 3", "level": "85", "category": "automation" },
+      { "name": "SPS-Programmierung", "level": "85", "category": "automation" },
+      { "name": "Sensorpart Vision", "level": "80", "category": "automation" },
+      { "name": "C# / .NET", "level": "85", "category": "software" },
+      { "name": "SQL Server", "level": "75", "category": "software" },
+      { "name": "ROS2", "level": "90", "category": "automation" },
+      { "name": "Universal Robots", "level": "75", "category": "automation" },
+      { "name": "C / C++", "level": "75", "category": "software" },
+      { "name": "Python", "level": "25", "category": "software" },
+      { "name": "React / Next.js", "level": "20", "category": "frontend" },
+      { "name": "JavaScript / TypeScript", "level": "25", "category": "frontend" },
+      { "name": "Tailwind CSS", "level": "20", "category": "frontend" },
+      { "name": "HTML/CSS", "level": "50", "category": "frontend" },
+      { "name": "Git / GitLab", "level": "85", "category": "tools" },
+      { "name": "Technische Dokumentation", "level": "85", "category": "tools" },
+      { "name": "Agile / Scrum", "level": "85", "category": "tools" }
+    ],
+    "categories": [
+      { "key": "all", "label": "Alle" },
+      { "key": "automation", "label": "Automatisierung" },
+      { "key": "software", "label": "Software" },
+      { "key": "frontend", "label": "Frontend" },
+      { "key": "tools", "label": "Tools" }
+    ],
+    "title": "Meine",
+    "title2": "Fähigkeiten"
+  },
+  "projects": {
+    "title": "Projekte",
+    "categories": [
+      { "key": "all", "label": "Alle" },
+      { "key": "academic", "label": "Akademische Projekte" },
+      { "key": "professional", "label": "Berufliche Projekte" },
+      { "key": "personal", "label": "Persönlich" }
+    ],
+    "subtitle": "Jedes Projekt steht für unzählige Stunden der Problemlösung und den magischen Moment, wenn der Roboter endlich genau das tut, was er soll.",
+    "ctaGithub": "Mein GitHub ansehen",
+    "openDemo": "Demo öffnen",
+    "openGithub": "GitHub-Repository öffnen",
+    "items": [
+      {
+        "id": 1,
+        "title": "Programmierung von Montagemaschinen",
+        "category": "professional",
+        "description": "Entwicklung der Automatisierungs- und Steuerungslogik für komplexe Montagemaschinen, einschließlich SPS-Programmierung und HMI-Integration.",
+        "image": "/projects/assembly.png",
+        "tags": ["TwinCAT 3", "C#", "Sensopart Vision Integration", "Industrieautomation", "Function Blocks"],
+        "demoUrl": "",
+        "githubUrl": ""
+      },
+      {
+        "id": 2,
+        "title": "Climate Screening Software",
+        "category": "professional",
+        "description": "Entwicklung einer automatisierten Screening-Software für Klimakammer-Tests mit Datenerfassungssystemen und Echtzeit-Prozessüberwachung.",
+        "image": "/projects/climate_test.png",
+        "tags": ["C#", "Datenerfassung", "LIN-Protokoll", "Softwareentwicklung", "Automatisierung"],
+        "demoUrl": "",
+        "githubUrl": ""
+      },
+      {
+        "id": 3,
+        "title": "Depalletierer-Lösung",
+        "category": "professional",
+        "description": "Implementierung einer Depalletierlösung mit einem kollaborativen Roboter (Universal Robots UR10) zur Optimierung der Produktionslinien-Versorgung.",
+        "image": "/projects/depalletizer.png",
+        "tags": ["Universal Robots", "ROS2", "Robotik", "Industrie 4.0"],
+        "demoUrl": "",
+        "githubUrl": ""
+      },
+      {
+        "id": 4,
+        "title": "Masterarbeit - Navigationssteuerung",
+        "category": "academic",
+        "description": "Entwicklung der Navigationssteuerung und Docking-Manöver für autonome mobile Manipulatoren (KUKA KMR iiwa) in Logistikumgebungen.",
+        "image": "/projects/thesis.png",
+        "tags": ["ROS2", "C++", "KUKA", "AMR", "Autonome Systeme", "Logistiklösungen"],
+        "demoUrl": "",
+        "githubUrl": ""
+      },
+      {
+        "id": 5,
+        "title": "Autonomer Unterwassergleiter",
+        "category": "academic",
+        "description": "Entwicklung eines autonomen Unterwassergleiters (Glider) zur Datenerfassung im Nahbereich und zur Umweltüberwachung.",
+        "image": "/projects/glider.png",
+        "tags": ["C++", "GPS", "Gleichstrommotor", "Robotik"],
+        "demoUrl": "",
+        "githubUrl": "https://github.com/ivanrcastro"
+      },
+      {
+        "id": 6,
+        "title": "Erstes Portfolio",
+        "category": "personal",
+        "description": "Initiales Webentwicklungsprojekt mit Fokus auf responsivem Design und UI/UX-Grundlagen unter Verwendung von Web-Kerntechnologien.",
+        "image": "/projects/firstPortfolio.png",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "demoUrl": "",
+        "githubUrl": "https://github.com/ivanrcastro/Website_Portfolio"
+      }
+    ]
+  },
+  "contact": {
+    "title": "In",
+    "title2": "Kontakt treten",
+    "subtitle": "Interessiert an Industrieautomation oder Software Engineering? Lassen Sie uns vernetzen.",    
+    "info": "Kontaktinformationen",
+    "email": "ivanrcastro6@gmail.com",
+    "location": "Standort",
+    "city": "Porto, Portugal",
+    "connect": "Vernetzen Sie sich mit mir"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
