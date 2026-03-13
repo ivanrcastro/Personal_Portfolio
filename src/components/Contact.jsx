@@ -81,7 +81,7 @@ export const Contact = () => {
                                 href="mailto:ivanrcastro6@gmail.com"
                                 className="w-full py-4 bg-primary text-primary-foreground font-mono text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
                             >
-                                &gt; EXECUTE_MESSAGE_SEND
+                            &gt; {t("contact.sendButton")} 
                             </a>
                         </div>
                     </div>

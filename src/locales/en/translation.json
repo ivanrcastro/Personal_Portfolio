@@ -20,22 +20,25 @@
     "cv": "View my CV",
     "experience": "Experience",
     "experiences": [
-        {
-            "date": "2023–2024",
-            "role": "Student Researcher in Robotics",
-            "company": "University of Minho"
-        },
-        {
-            "date": "2024–2025",
-            "role": "Automation and Robotics Engineer",
-            "company": "Bosch Car Multimedia"
-        },
-        {
-            "date": "2025–Current",
-            "role": "Software and Automation Engineer",
-            "company": "Preh Portugal"
-        }
-    ]
+    {
+      "date": "2023–2024",
+      "role": "Student Researcher in Robotics",
+      "company": "University of Minho",
+      "description": "Research and development in mobile robotics • Control algorithms development • Master's degree research"
+    },
+    {
+      "date": "2024–2025",
+      "role": "Software and Robotics Engineer",
+      "company": "Bosch Car Multimedia",
+      "description": "Programming collaborative robots (Universal Robots) • Robotic system development with ROS2 and C++ • Innovation projects for manufacturing line supply"
+    },
+    {
+      "date": "2025–Current",
+      "role": "Software and Automation Engineer",
+      "company": "Preh Portugal",
+      "description": "Software integration (C#/.NET) • Beckhoff TwinCAT 3 PLC programming • Sensopart vision system integration • SQL Server database management • MQTT communication & Mosquitto Broker for PLC-HMI integration"
+    }
+  ]
   },
   "academic": {
     "bachelor": "Bachelor’s in Industrial Electronics and Computers Engineering",
@@ -43,7 +46,7 @@
     "bYear": "2019–2022",
     "master": "Master’s in Control, Automation and Robotics",
     "mYear": "2022–2024"
-  }, 
+  },
   "skills": {
     "skillsList": [
       { "name": "Beckhoff TwinCAT 3", "level": "85", "category": "automation" },
@@ -81,7 +84,8 @@
       { "key": "professional", "label": "Professional Work" },
       { "key": "personal", "label": "Personal" }
     ],
-    "subtitle": "Each project represents countless hours of problem-solving and that magical moment when the robot finally does what it was supposed to do.",    "ctaGithub": "Check my GitHub",
+    "subtitle": "Each project represents countless hours of problem-solving and that magical moment when the robot finally does what it was supposed to do.",
+    "ctaGithub": "Check my GitHub",
     "openDemo": "Open demo",
     "openGithub": "Open GitHub repository",
     "items": [
@@ -150,12 +154,13 @@
   "contact": {
     "title": "Get in",
     "title2": "Touch",
-    "subtitle": "Interested in industrial automation or software engineering? Let's connect.",    
+    "subtitle": "Interested in industrial automation or software engineering? Let's connect.",
     "info": "Contact Information",
     "email": "ivanrcastro6@gmail.com",
     "location": "Localização",
     "city": "Porto, Portugal",
-    "connect": "Connect with me"
+    "connect": "Connect with me",
+    "sendButton": "EXECUTE_MESSAGE_SEND"
   },
   "footer": {
     "rights": "All rights reserved."

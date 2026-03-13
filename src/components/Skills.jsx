@@ -78,11 +78,11 @@ export const Skills = () => {
             </div>
 
             {/* Grid de Skills */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
                 {filteredSkills.map((skill, key) => (
                     <div key={key} className="bg-card/50 p-4 md:p-6 border border-border rounded-xl hover:border-primary/50 transition-all group">
                         <div className="text-left mb-4">
-                            <h3 className="font-mono text-xs md:text-sm uppercase tracking-wider group-hover:text-primary transition-colors truncate">
+                            <h3 className="font-mono text-xs md:text-sm uppercase tracking-wider group-hover:text-primary transition-colors whitespace-normal break-words min-h-[2.5rem] flex items-center">
                                 {skill.name}
                             </h3>
                         </div> 

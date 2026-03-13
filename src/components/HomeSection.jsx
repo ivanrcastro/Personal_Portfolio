@@ -12,11 +12,11 @@ export const HomeSection = () => {
                  style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
             <div className="container max-w-5xl mx-auto text-center z-10">
-                <div className="space-y-8">
+                <div className="space-y-6 md:space-y-8">
                     
                     {/* Badge de Status */}
-                    <div className="opacity-0 animate-fade-in flex justify-center">
-                        <span className="px-3 py-1 border border-primary/30 text-primary font-mono text-[10px] tracking-[0.3em] uppercase rounded-sm bg-primary/5">
+                    <div className="opacity-0 animate-fade-in flex justify-center mb-4">
+                        <span className="px-3 py-1 border border-primary/30 text-primary font-mono text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase rounded-sm bg-primary/5">
                             System.Ready_v2.0
                         </span>
                     </div>
@@ -63,7 +63,7 @@ export const HomeSection = () => {
                             </a>
 
                             <a 
-                                href="/CV_Ivan_Castro.pdf" 
+                                href="/CV.pdf" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="group flex items-center gap-3 px-8 py-3 border border-border text-foreground font-mono text-xs tracking-[0.2em] uppercase hover:border-primary transition-all"

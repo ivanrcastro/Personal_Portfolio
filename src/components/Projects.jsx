@@ -72,8 +72,10 @@ export const Projects = () => {
                                 </div>
 
                                 <h3 className="text-xl font-bold mb-2 uppercase tracking-tight group-hover:text-primary transition-colors">{project.title}</h3>
-                                <p className="text-muted-foreground text-sm mb-6 leading-relaxed line-clamp-2">{project.description}</p>
-                                
+                                {/* Descrição do Projeto */}
+                                <p className="text-muted-foreground text-sm mb-6 leading-relaxed whitespace-normal">
+                                    {project.description}
+                                </p>                                
                                 {/* Links de Ação */}
                                 <div className="flex justify-end pt-4 border-t border-border/40">
                                     {project.githubUrl ? (

@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const words = [
-  "Hello", "Hola", "Ciao", "Bonjour", "Willkommen", 
-  "Welkom", "Hej", "Hei", "こんにちは", "안녕하세요", 
+  "Hello", "Hola", "Ciao", "Bonjour", "Willkommen", "こんにちは", "안녕하세요", 
   "你好", "Olá", "System.Start()", "WELCOME"
 ];
 
