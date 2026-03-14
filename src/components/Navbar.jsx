@@ -24,8 +24,20 @@ export const Navbar = () => {
     i18n.changeLanguage(lng);
     localStorage.setItem("lng", lng);
     setIsLangOpen(false);
-    setIsMenuOpen(false); // Fecha o menu mobile se mudar a língua lá
+    setIsMenuOpen(false);
   };
+
+  // BLOQUEIO DE SCROLL: Impede o scroll do body quando o menu está aberto
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   // Fechar dropdown ao clicar fora
   useEffect(() => {
@@ -38,7 +50,7 @@ export const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Efeito de scroll
+  // Efeito de scroll para mudar a aparência da nav
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
@@ -56,8 +68,8 @@ export const Navbar = () => {
         
         {/* LOGO / NOME */}
         <a href="#home" className={cn(
-          "text-lg md:text-xl font-mono font-black tracking-tighter hover:text-primary transition-colors z-[110]",
-          !isScrolled && "md:block hidden" // No topo, esconde no mobile para não chocar com o Hero
+          "text-lg md:text-xl font-mono font-black tracking-tighter hover:text-primary transition-colors z-[130]",
+          !isScrolled && "md:block hidden" 
         )}>
           IVAN<span className="text-primary">.</span>CASTRO
         </a>
@@ -78,7 +90,6 @@ export const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4 border-l border-border pl-8">
-            {/* Seletor de Idioma Desktop */}
             <div className="relative" ref={dropDownRef}>
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
@@ -90,7 +101,7 @@ export const Navbar = () => {
               </button>
 
               {isLangOpen && (
-                <div className="absolute right-0 mt-2 w-32 bg-card border border-border shadow-2xl rounded overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+                <div className="absolute right-0 mt-2 w-32 bg-card border border-border shadow-2xl rounded overflow-hidden animate-in fade-in zoom-in-95 duration-200 z-[140]">
                   {["en", "pt", "fr", "de"].map((lang) => (
                     <button
                       key={lang}
@@ -110,12 +121,12 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* MOBILE ACTIONS (Theme + Menu) */}
-        <div className="flex md:hidden items-center gap-3 z-[110]">
+        {/* MOBILE ACTIONS (Botão flutua acima do overlay) */}
+        <div className="flex md:hidden items-center gap-3 z-[130]">
           <ThemeToggle />
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)} 
-            className="p-2 text-primary bg-secondary/80 backdrop-blur-md rounded-lg border border-border"
+            className="p-2 text-primary bg-secondary/80 backdrop-blur-md rounded-lg border border-border active:scale-95 transition-transform"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -123,39 +134,52 @@ export const Navbar = () => {
 
         {/* MOBILE OVERLAY MENU */}
         <div className={cn(
-          "fixed inset-0 bg-background/98 backdrop-blur-2xl md:hidden transition-all duration-500 flex flex-col justify-center px-8 z-[105]",
-          isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+          "fixed inset-0 bg-background/98 backdrop-blur-2xl md:hidden transition-all duration-500 flex flex-col z-[120] h-dvh w-screen",
+          isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         )}>
-          <div className="space-y-8 flex flex-col">
-            <span className="font-mono text-[10px] text-primary/40 tracking-[0.5em] uppercase border-b border-border pb-2">Navigation_System</span>
-            {navItems.map((item) => (
-              <a 
-                key={item.key} 
-                href={item.href} 
-                onClick={() => setIsMenuOpen(false)}
-                className="text-3xl font-mono font-bold uppercase tracking-tighter flex items-center gap-4 group"
-              >
-                <span className="text-primary text-sm font-light">[{item.id}]</span>
-                <span className="group-hover:translate-x-2 transition-transform">{t(`nav.${item.key}`)}</span>
-              </a>
-            ))}
-            
-            <div className="pt-8 border-t border-border mt-4">
-               <span className="font-mono text-[10px] text-primary/40 tracking-[0.5em] uppercase block mb-4">Language_Selection</span>
-               <div className="grid grid-cols-2 gap-2">
-                 {["en", "pt", "fr", "de"].map((lang) => (
-                   <button
-                     key={lang}
-                     onClick={() => changeLanguage(lang)}
-                     className={cn(
-                       "py-3 px-4 rounded border font-mono text-[10px] font-bold uppercase tracking-widest transition-all",
-                       currentLang.toLowerCase() === lang ? "bg-primary text-primary-foreground border-primary" : "bg-secondary/50 border-border"
-                     )}
-                   >
-                     {lang}
-                   </button>
-                 ))}
-               </div>
+          <div className="flex flex-col justify-center px-10 space-y-10 h-full">
+            <div className="space-y-8 flex flex-col">
+              <span className="font-mono text-[10px] text-primary/40 tracking-[0.5em] uppercase border-b border-border pb-4">
+                Navigation_System
+              </span>
+              
+              <div className="flex flex-col space-y-6">
+                {navItems.map((item) => (
+                  <a 
+                    key={item.key} 
+                    href={item.href} 
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-4xl font-mono font-bold uppercase tracking-tighter flex items-center gap-4 group"
+                  >
+                    <span className="text-primary text-xs font-light">[{item.id}]</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">
+                      {t(`nav.${item.key}`)}
+                    </span>
+                  </a>
+                ))}
+              </div>
+              
+              <div className="pt-10 border-t border-border mt-4">
+                 <span className="font-mono text-[10px] text-primary/40 tracking-[0.5em] uppercase block mb-6">
+                   Language_Selection
+                 </span>
+                 <div className="grid grid-cols-2 gap-3">
+                   {["en", "pt", "fr", "de"].map((lang) => (
+                     <button
+                       key={lang}
+                       onClick={() => changeLanguage(lang)}
+                       className={cn(
+                         "py-4 rounded border font-mono text-[11px] font-bold uppercase tracking-widest transition-all",
+                         currentLang.toLowerCase() === lang 
+                           ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20" 
+                           : "bg-secondary/50 border-border active:bg-secondary"
+                       )}
+                     >
+                       {lang}
+                     </button>
+                   ))}
+                 </div>
+              </div>
             </div>
           </div>
         </div>
