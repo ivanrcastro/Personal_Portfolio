@@ -130,7 +130,6 @@
         "githubUrl": ""
       },
       {
-        "id": 1,
         "id": 5,
         "title": "Glider Sous-marin Autonome",
         "category": "academic",
@@ -149,6 +148,16 @@
         "tags": ["HTML", "CSS", "JavaScript"],
         "demoUrl": "",
         "githubUrl": "https://github.com/ivanrcastro/Website_Portfolio"
+      },
+      {
+        "id": 7,
+        "title": "Flow Finance Tracker",
+        "category": "personal",
+        "description": "Une application web de gestion des finances personnelles comprenant une authentification sécurisée, l'intégration d'une base de données en temps réel et une visualisation dynamique des données pour le contrôle du budget mensuel.",
+        "image": "/projects/flowFinance.png",
+        "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
+        "demoUrl": "VOTRE_URL_ICI",
+        "githubUrl": "https://github.com/ivanrcastro/Flow_Finance-"
       }
     ]
   },

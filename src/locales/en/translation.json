@@ -148,6 +148,15 @@
         "tags": ["HTML", "CSS", "JavaScript"],
         "demoUrl": "",
         "githubUrl": "https://github.com/ivanrcastro/Website_Portfolio"
+      },
+      {
+        "id": 7,
+        "title": "Flow Finance Tracker",
+        "category": "personal",
+        "description": "A personal finance web application featuring secure authentication, real-time database integration, and dynamic data visualization for monthly budget management.",        "image": "/projects/flowFinance.png",
+        "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
+        "demoUrl": "A_TUA_URL_AQUI",
+        "githubUrl": "https://github.com/ivanrcastro/Flow_Finance-"
       }
     ]
   },
