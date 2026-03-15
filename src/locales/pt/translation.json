@@ -153,7 +153,7 @@
         "id": 7,
         "title": "Flow Finance Tracker",
         "category": "personal",
-        "description": "Uma aplicação web de gestão financeira pessoal com autenticação segura, integração de base de dados em tempo real e visualização dinâmica de dados para controlo de orçamento mensal.",
+        "description": "Diz adeus às folhas de cálculo desorganizadas e apps complexas. O Flow Finance é uma ferramenta intuitiva desenhada para te ajudar a dominar o teu orçamento. Regista despesas em segundos, monitoriza os teus limites mensais e mantém o controlo total do teu fluxo financeiro todos os dias.",
         "image": "/projects/flowFinance.png",
         "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
         "demoUrl": "A_TUA_URL_AQUI",
