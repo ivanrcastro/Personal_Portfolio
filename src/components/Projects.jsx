@@ -21,8 +21,9 @@ export const Projects = () => {
                 {/* Cabeçalho */}
                 <div className="flex items-center gap-4 mb-16">
                     <div className="h-px flex-1 bg-border" />
-                    <h2 className="text-3xl font-mono tracking-tighter uppercase">
-                        03. {t("projects.title")}
+                    <h2 className="text-3xl font-mono tracking-tighter uppercase flex gap-2">
+                        <span className="text-muted-foreground">03. {t("projects.title")}</span>
+                        <span className="text-primary font-bold">{t("projects.title2")}</span>
                     </h2>
                     <div className="h-px flex-1 bg-border" />
                 </div>
