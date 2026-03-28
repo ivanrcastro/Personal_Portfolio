@@ -102,6 +102,7 @@
     "ctaGithub": "Ver o meu GitHub",
     "openDemo": "Abrir demo",
     "openGithub": "Abrir repositório GitHub",
+    "restricted": "[ CÓDIGO RESTRITO // NDA ]",
     "items": [
       {
         "id": 1,
@@ -121,7 +122,7 @@
         "image": "/projects/climate_test.png",
         "tags": ["C#", "Aquisição de Dados", "Protocolo LIN", "Desenvolvimento de Software", "Automação"],
         "demoUrl": "",
-        "githubUrl": ""
+        "githubUrl": ""      
       },
       {
         "id": 3,
@@ -132,6 +133,7 @@
         "tags": ["Universal Robots", "ROS2", "Robótica", "Indústria 4.0"],
         "demoUrl": "",
         "githubUrl": ""
+
       },
       {
         "id": 4,
@@ -141,7 +143,15 @@
         "image": "/projects/thesis.png",
         "tags": ["ROS2", "C++", "KUKA", "AMR", "Sistemas Autónomos", "Soluções Logísticas"],
         "demoUrl": "",
-        "githubUrl": ""
+        "thesisUrl": "/thesis.pdf",
+        "thesisLabel": "Ler a minha tese",
+        "youtubeUrls": [
+          { "url": "https://www.youtube.com/watch?v=h8TiymgZLrs", "label": "Vídeo 1" },
+          { "url": "https://www.youtube.com/watch?v=ivut8JgUGbo", "label": "Vídeo 2" },
+          { "url": "https://www.youtube.com/watch?v=uVqOl-3RPE8", "label": "Vídeo 3" },
+          { "url": "https://www.youtube.com/watch?v=AZRuYiUvVCw", "label": "Vídeo 4 - Navegação livre" },
+          { "url": "https://www.youtube.com/watch?v=GtSJU6fcLuo&t=25s", "label": "Vídeo 5 - Navegação com obstáculos " }
+        ]
       },
       {
         "id": 5,
@@ -149,29 +159,30 @@
         "category": "academic",
         "description": "Desenvolvimento de um glider subaquático autónomo projetado para recolha de dados de curto alcance e monitorização ambiental.",
         "image": "/projects/glider.png",
-        "tags": ["C++", "GPS", "Motores DC", "Robótica"],
-        "demoUrl": "",
-        "githubUrl": "https://github.com/ivanrcastro"
+        "tags": [ "GPS", "Motores DC", "Robótica"],
+        "demoUrl": ""
       },
       {
         "id": 6,
+        "title": "Flow Finance Tracker",
+        "category": "personal",
+        "description": "Diz adeus às folhas de cálculo desorganizadas e apps complexas. O Flow Finance é uma ferramenta intuitiva desenhada para te ajudar a dominar o teu orçamento. Regista despesas em segundos, monitoriza os teus limites mensais e mantém o controlo total do teu fluxo financeiro todos os dias.",
+        "image": "/projects/flowFinance.png",
+        "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
+        "demoUrl": "",
+        "appLabel": "Experimenta o Flow Finance",
+        "appUrl": "https://flow-finance-rho.vercel.app/"
+      },
+      {
+        "id": 7,
         "title": "Primeiro Portfólio",
         "category": "personal",
         "description": "Projeto inicial de desenvolvimento web focado em conceitos fundamentais de design responsivo e bases de UI/UX utilizando tecnologias web base.",
         "image": "/projects/firstPortfolio.png",
         "tags": ["HTML", "CSS", "JavaScript"],
         "demoUrl": "",
-        "githubUrl": "https://github.com/ivanrcastro/Website_Portfolio"
-      },
-      {
-        "id": 7,
-        "title": "Flow Finance Tracker",
-        "category": "personal",
-        "description": "Diz adeus às folhas de cálculo desorganizadas e apps complexas. O Flow Finance é uma ferramenta intuitiva desenhada para te ajudar a dominar o teu orçamento. Regista despesas em segundos, monitoriza os teus limites mensais e mantém o controlo total do teu fluxo financeiro todos os dias.",
-        "image": "/projects/flowFinance.png",
-        "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
-        "demoUrl": "A_TUA_URL_AQUI",
-        "githubUrl": "https://github.com/ivanrcastro/Flow_Finance-"
+        "appLabel": "Vê o meu primeiro portfólio",
+        "appUrl": "https://ivanribcastro.vercel.app/"
       }
     ]
   },

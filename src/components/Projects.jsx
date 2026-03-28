@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Github, Lock } from "lucide-react"; // Importamos o Lock para o aspeto confidencial
+import { Github, Lock, ExternalLink, Youtube, FileText } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { cn } from "../lib/utils"; 
+import { cn } from "../lib/utils";
 
 export const Projects = () => {
     const { t } = useTranslation();
@@ -10,14 +10,14 @@ export const Projects = () => {
     const categories = t("projects.categories", { returnObjects: true }) || [];
     const allProjects = t("projects.items", { returnObjects: true }) || [];
 
-    const filteredProjects = activeCategory === "all" 
-        ? allProjects 
+    const filteredProjects = activeCategory === "all"
+        ? allProjects
         : allProjects.filter(project => project.category === activeCategory);
 
     return (
         <section id="projects" className="py-24 px-4 bg-background">
             <div className="container mx-auto max-w-6xl">
-                
+
                 {/* Cabeçalho */}
                 <div className="flex items-center gap-4 mb-16">
                     <div className="h-px flex-1 bg-border" />
@@ -53,7 +53,7 @@ export const Projects = () => {
                             {/* Imagem */}
                             <div className="h-48 overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 relative">
                                 <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                {!project.githubUrl && (
+                                {!project.appUrl && !project.youtubeUrls && !project.thesisUrl && (
                                     <div className="absolute top-2 right-2 bg-background/80 backdrop-blur-sm px-2 py-1 rounded border border-border">
                                         <span className="text-[9px] font-mono uppercase tracking-tighter flex items-center gap-1">
                                             <Lock size={10} /> Proprietary
@@ -73,19 +73,41 @@ export const Projects = () => {
                                 </div>
 
                                 <h3 className="text-xl font-bold mb-2 uppercase tracking-tight group-hover:text-primary transition-colors">{project.title}</h3>
-                                {/* Descrição do Projeto */}
                                 <p className="text-muted-foreground text-sm mb-6 leading-relaxed whitespace-normal">
                                     {project.description}
-                                </p>                                
+                                </p>
+
                                 {/* Links de Ação */}
-                                <div className="flex justify-end pt-4 border-t border-border/40">
-                                    {project.githubUrl ? (
-                                        <a href={project.githubUrl} target="_blank" rel="noreferrer" className="text-xs font-mono flex items-center gap-2 text-primary hover:underline">
-                                            RUN_SOURCE <Github size={14}/>
+                                <div className="flex flex-wrap justify-end gap-4 pt-4 border-t border-border/40">
+
+                                    {/* Link da App */}
+                                    {project.appUrl && (
+                                        <a href={project.appUrl} target="_blank" rel="noreferrer"
+                                            className="text-xs font-mono flex items-center gap-2 text-primary hover:underline">
+                                            {project.appLabel || "LAUNCH_APP"} <ExternalLink size={14} />
                                         </a>
-                                    ) : (
+                                    )}
+
+                                    {/* PDF da Tese */}
+                                    {project.thesisUrl && (
+                                        <a href={project.thesisUrl} target="_blank" rel="noreferrer"
+                                            className="text-xs font-mono flex items-center gap-2 text-primary hover:underline">
+                                            {project.thesisLabel || "READ_THESIS"} <FileText size={14} />
+                                        </a>
+                                    )}
+
+                                    {/* Vídeos do YouTube (pode ser um array) */}
+                                    {project.youtubeUrls && project.youtubeUrls.map((video, i) => (
+                                        <a key={i} href={video.url} target="_blank" rel="noreferrer"
+                                            className="text-xs font-mono flex items-center gap-2 text-primary hover:underline">
+                                            {video.label} <Youtube size={14} />
+                                        </a>
+                                    ))}
+
+                                    {/* NDA / sem links */}
+                                    {!project.appUrl && !project.thesisUrl && !project.youtubeUrls && (
                                         <div className="text-[10px] font-mono text-muted-foreground flex items-center gap-2 opacity-60 italic">
-                                            [ CODE_RESTRICTED // NDA ]
+                                            {project.restrictedLabel || t("projects.restricted")}
                                         </div>
                                     )}
                                 </div>

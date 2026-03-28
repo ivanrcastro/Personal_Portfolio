@@ -6,23 +6,23 @@
     "contact": "Contact"
   },
   "home": {
-    "greetingPrefix": "Salut, je suis",
+    "greetingPrefix": "Bonjour, je suis",
     "firstName": "Ivan",
     "lastName": "Castro",
-    "intro": "Je suis un ingénieur en robotique et automatisation, passionné par la création de solutions innovantes. Expert en programmation d'automates (API), robotique et développement logiciel. J'aime relever des défis et rendre la technologie plus intelligente.\nMon objectif est de continuer à évoluer en tant qu'ingénieur et de contribuer à des projets à fort impact.",
+    "intro": "Je suis un Ingénieur en Robotique et Automatisation passionné par la création de solutions innovantes. Spécialiste en programmation d'automates (API), robotique et développement logiciel. J'aime relever des défis et rendre la technologie plus intelligente.\nMon objectif est de continuer à évoluer en tant qu'ingénieur et de contribuer à des projets à fort impact.",
     "scroll": "Défiler"
   },
   "about": {
     "aboutLine": "À propos",
     "meLine": "de moi",
     "academic": "Parcours Académique",
-    "contact": "Contactez-moi",
+    "contact": "Prendre contact",
     "cv": "Voir mon CV",
     "experience": "Expérience",
     "experiences": [
       {
         "date": "2023–2024",
-        "role": "Étudiant Chercheur en Robotique",
+        "role": "Chercheur en Robotique (Étudiant)",
         "company": "Université du Minho",
         "description": "Recherche et développement en robotique mobile • Développement d'algorithmes de contrôle • Recherche dans le cadre du Master"
       },
@@ -34,9 +34,9 @@
       },
       {
         "date": "2025–Présent",
-        "role": "Ingenieur Logiciel et Automatisation",
+        "role": "Ingénieur Logiciel et Automatisation",
         "company": "Preh Portugal",
-        "description": "Intégration logicielle (C#/.NET) • Programmation d'automates Beckhoff TwinCAT 3 • Intégration de systèmes de vision Sensopart • Gestion de bases de données SQL Server • Communication MQTT & Broker Mosquitto pour l'intégration PLC-HMI • Contrôle de version via GitLab"
+        "description": "Intégration logicielle (C#/.NET) • Programmation d'automates Beckhoff TwinCAT 3 • Intégration de systèmes de vision Sensopart • Gestion de bases de données SQL Server • Communication MQTT et Mosquitto Broker pour l'intégration API-IHM • Contrôle de version via GitLab"
       }
     ]
   },
@@ -44,7 +44,7 @@
     "bachelor": "Licence en Génie Électronique Industrielle et Informatique",
     "university": "Université du Minho",
     "bYear": "2019–2022",
-    "master": "Master en Automatique, Robotique et Contrôle",
+    "master": "Master en Génie du Contrôle, de l'Automatisation et de la Robotique",
     "mYear": "2022–2024"
   },
   "skills": {
@@ -57,7 +57,7 @@
       { "name": "Git", "level": "85", "category": "tools" },
       { "name": "Documentation Technique", "level": "85", "category": "tools" },
       { "name": "Agile / Scrum", "level": "85", "category": "tools" },
-      { "name": "Sensorpart Vision", "level": "80", "category": "automation" },
+      { "name": "Sensopart Vision", "level": "80", "category": "automation" },
       { "name": "Universal Robots", "level": "75", "category": "automation" },
       { "name": "URScript / Polyscope", "level": "75", "category": "tools" },
       { "name": "C / C++", "level": "75", "category": "software" },
@@ -81,35 +81,36 @@
     ],
     "categories": [
       { "key": "all", "label": "Tout" },
-      { "key": "automation", "label": "Automatisme" },
+      { "key": "automation", "label": "Automatisation" },
       { "key": "software", "label": "Logiciel" },
       { "key": "frontend", "label": "Frontend" },
       { "key": "tools", "label": "Outils" }
     ],
     "title": "Mes",
-    "title2": "Skills"
+    "title2": "Compétences"
   },
   "projects": {
-  "title": "Mes",
-  "title2": "Projets", 
-  "categories": [
+    "title": "Mes",
+    "title2": "Travaux",
+    "categories": [
       { "key": "all", "label": "Tout" },
       { "key": "academic", "label": "Projets Académiques" },
       { "key": "professional", "label": "Travail Professionnel" },
       { "key": "personal", "label": "Personnel" }
     ],
-    "subtitle": "Chaque projet représente d'innombrables heures de résolution de problèmes et ce moment magique où le robot fait enfin ce qu'il est censé faire.",
+    "subtitle": "Chaque projet représente d'innombrables heures de résolution de problèmes et ce moment magique où le robot fait enfin ce qu'il était censé faire.",
     "ctaGithub": "Voir mon GitHub",
     "openDemo": "Ouvrir démo",
-    "openGithub": "Ouvrir le dépôt GitHub",
+    "openGithub": "Ouvrir dépôt GitHub",
+    "restricted": "[ CODE RESTREINT // NDA ]",
     "items": [
       {
         "id": 1,
         "title": "Programmation de Machines d'Assemblage",
         "category": "professional",
-        "description": "Développement de la logique d'automatisation et de contrôle pour des machines d'assemblage complexes, incluant la programmation d'automates et l'intégration d'IHM.",
+        "description": "Développement de la logique d'automatisation et de contrôle pour des machines d'assemblage complexes, incluant la programmation d'API et l'intégration d'IHM.",
         "image": "/projects/assembly.png",
-        "tags": ["TwinCAT 3", "C#", "Vision Sensopart", "Automatisme Industriel", "Function Blocks"],
+        "tags": ["TwinCAT 3", "C#", "Intégration Vision Sensopart", "Automatisation Industrielle", "Blocs Fonctionnels"],
         "demoUrl": "",
         "githubUrl": ""
       },
@@ -117,17 +118,17 @@
         "id": 2,
         "title": "Logiciel de Climate Screening",
         "category": "professional",
-        "description": "Développement d'un logiciel de tri automatisé pour les tests en chambre climatique, avec acquisition de données et surveillance du processus en temps réel.",
+        "description": "Développement d'un logiciel de tri automatisé pour les tests en chambres climatiques, avec systèmes d'acquisition de données et surveillance en temps réel.",
         "image": "/projects/climate_test.png",
-        "tags": ["C#", "Acquisition de Données", "Protocole LIN", "Génie Logiciel", "Automatisme"],
+        "tags": ["C#", "Acquisition de Données", "Protocole LIN", "Développement Logiciel", "Automatisation"],
         "demoUrl": "",
-        "githubUrl": ""
+        "githubUrl": ""      
       },
       {
         "id": 3,
         "title": "Solution de Dépalettisation",
         "category": "professional",
-        "description": "Mise en œuvre d'une solution de dépalettisation à l'aide d'un robot collaboratif Universal Robots UR10 pour optimiser l'approvisionnement des lignes.",
+        "description": "Mise en œuvre d'une solution de dépalettisation à l'aide d'un robot collaboratif Universal Robots UR10 pour optimiser l'approvisionnement de la ligne de production.",
         "image": "/projects/depalletizer.png",
         "tags": ["Universal Robots", "ROS2", "Robotique", "Industrie 4.0"],
         "demoUrl": "",
@@ -137,53 +138,62 @@
         "id": 4,
         "title": "Thèse de Master - Contrôle de Navigation",
         "category": "academic",
-        "description": "Développement du contrôle de navigation et des manœuvres d'amarrage pour des manipulateurs mobiles autonomes (KUKA KMR iiwa) en milieu logistique.",
+        "description": "Développement du contrôle de navigation et des manœuvres d'accostage pour manipulateurs mobiles autonomes (KUKA KMR iiwa) en environnements logistiques.",
         "image": "/projects/thesis.png",
-        "tags": ["ROS2", "C++", "KUKA", "AMR", "Systèmes Autonomes", "Logistique"],
+        "tags": ["ROS2", "C++", "KUKA", "AMR", "Systèmes Autonomes", "Solutions Logistiques"],
         "demoUrl": "",
-        "githubUrl": ""
+        "thesisUrl": "/thesis.pdf",
+        "thesisLabel": "Lire ma thèse",
+        "youtubeUrls": [
+          { "url": "https://www.youtube.com/watch?v=h8TiymgZLrs", "label": "Vidéo 1" },
+          { "url": "https://www.youtube.com/watch?v=ivut8JgUGbo", "label": "Vidéo 2" },
+          { "url": "https://www.youtube.com/watch?v=uVqOl-3RPE8", "label": "Vidéo 3" },
+          { "url": "https://www.youtube.com/watch?v=AZRuYiUvVCw", "label": "Vidéo 4 - Navigation libre" },
+          { "url": "https://www.youtube.com/watch?v=GtSJU6fcLuo&t=25s", "label": "Vidéo 5 - Navigation avec obstacles" }
+        ]
       },
       {
         "id": 5,
         "title": "Glider Sous-marin Autonome",
         "category": "academic",
-        "description": "Développement d'un planeur sous-marin autonome conçu pour la collecte de données à courte portée et la surveillance environnementale.",
+        "description": "Développement d'un planeur (glider) sous-marin autonome conçu pour la collecte de données à courte portée et la surveillance environnementale.",
         "image": "/projects/glider.png",
-        "tags": ["C++", "GPS", "Moteurs DC", "Robotique"],
-        "demoUrl": "",
-        "githubUrl": "https://github.com/ivanrcastro"
+        "tags": [ "GPS", "Moteurs DC", "Robotique"],
+        "demoUrl": ""
       },
       {
         "id": 6,
-        "title": "Premier Portfolio",
+        "title": "Flow Finance Tracker",
         "category": "personal",
-        "description": "Projet initial de développement web axé sur les concepts fondamentaux du design réactif et de l'UI/UX en utilisant les technologies web de base.",
-        "image": "/projects/firstPortfolio.png",
-        "tags": ["HTML", "CSS", "JavaScript"],
+        "description": "Dites adieu aux tableurs désorganisés. Flow Finance est un outil intuitif conçu pour vous aider à maîtriser votre budget. Enregistrez vos dépenses en quelques secondes et gardez le contrôle total de vos flux financiers.",
+        "image": "/projects/flowFinance.png",
+        "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
         "demoUrl": "",
-        "githubUrl": "https://github.com/ivanrcastro/Website_Portfolio"
+        "appLabel": "Essayer Flow Finance",
+        "appUrl": "https://flow-finance-rho.vercel.app/"
       },
       {
         "id": 7,
-        "title": "Flow Finance Tracker",
+        "title": "Premier Portfolio",
         "category": "personal",
-        "description": "Fini les feuilles de calcul désordonnées ou les applications complexes. Flow Finance est un outil simplifié conçu pour vous aider à maîtriser votre budget. Enregistrez vos dépenses en quelques secondes, surveillez vos limites mensuelles et gardez le contrôle de votre flux financier au quotidien.",
-        "image": "/projects/flowFinance.png",
-        "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
-        "demoUrl": "VOTRE_URL_ICI",
-        "githubUrl": "https://github.com/ivanrcastro/Flow_Finance-"
+        "description": "Projet initial de développement web axé sur les concepts fondamentaux du design réactif et les bases de l'UI/UX utilisant les technologies web standards.",
+        "image": "/projects/firstPortfolio.png",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "demoUrl": "",
+        "appLabel": "Voir mon premier portfolio",
+        "appUrl": "https://ivanribcastro.vercel.app/"
       }
     ]
   },
   "contact": {
-    "title": "Entrer en",
+    "title": "Prendre",
     "title2": "Contact",
-    "subtitle": "Intéressé par l'automatisation industrielle ou le génie logiciel ? Connectons-nous.",
+    "subtitle": "Intéressé par l'automatisation industrielle ou l'ingénierie logicielle ? Discutons-en.",
     "info": "Informations de Contact",
     "email": "ivanrcastro6@gmail.com",
     "location": "Localisation",
     "city": "Porto, Portugal",
-    "connect": "Rejoignez-moi sur",
+    "connect": "Connectez-vous avec moi",
     "sendButton": "EXECUTER_ENVOI_MESSAGE"
   },
   "footer": {

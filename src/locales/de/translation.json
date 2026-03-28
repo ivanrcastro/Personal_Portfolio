@@ -9,7 +9,7 @@
     "greetingPrefix": "Hallo, ich bin",
     "firstName": "Ivan",
     "lastName": "Castro",
-    "intro": "Ich bin ein Ingenieur für Robotik und Automatisierung mit einer Leidenschaft für innovative Lösungen. Erfahren in SPS-Programmierung, Robotik und Softwareentwicklung. Es bereitet mir Freude, Herausforderungen zu lösen und Technologien intelligenter zu gestalten.\nMein Ziel ist es, mich stetig weiterzuentwickeln und zu wegweisenden Projekten beizutragen.",
+    "intro": "Ich bin ein Ingenieur für Robotik und Automatisierung mit einer Leidenschaft für innovative Lösungen. Spezialisiert auf SPS-Programmierung, Robotik und Softwareentwicklung. Ich liebe es, Herausforderungen zu lösen und Technologie intelligenter zu machen.\nMein Ziel ist es, mich als Ingenieur stetig weiterzuentwickeln und an Projekten mit hoher Reichweite mitzuwirken.",
     "scroll": "Scrollen"
   },
   "about": {
@@ -18,25 +18,25 @@
     "academic": "Akademischer Werdegang",
     "contact": "Kontakt aufnehmen",
     "cv": "Lebenslauf ansehen",
-    "experience": "Berufserfahrung",
+    "experience": "Erfahrung",
     "experiences": [
       {
         "date": "2023–2024",
-        "role": "Wissenschaftlicher Mitarbeiter (Robotik)",
+        "role": "Robotik-Forscher (Student)",
         "company": "Universität Minho",
-        "description": "Forschung und Entwicklung im Bereich mobile Robotik • Entwicklung von Steuerungsalgorithmen • Forschung im Rahmen des Masterstudiums"
+        "description": "Forschung und Entwicklung im Bereich mobile Robotik • Entwicklung von Regelungsalgorithmen • Forschung im Rahmen des Masterstudiums"
       },
       {
         "date": "2024–2025",
         "role": "Software- und Robotik-Ingenieur",
         "company": "Bosch Car Multimedia",
-        "description": "Programmierung von kollaborativen Robotern (Universal Robots) • Entwicklung von Robotersystemen mit ROS2 und C++ • Innovationsprojekte für die Versorgung von Fertigungslinien"
+        "description": "Programmierung von kollaborativen Robotern (Universal Robots) • Entwicklung von Robotersystemen mit ROS2 und C++ • Innovationsprojekte für Versorgungssysteme in Produktionslinien"
       },
       {
         "date": "2025–Heute",
         "role": "Software- und Automatisierungsingenieur",
         "company": "Preh Portugal",
-        "description": "Softwareintegration (C#/.NET) • SPS-Programmierung mit Beckhoff TwinCAT 3 • Integration von Sensopart Bildverarbeitungssystemen • Datenbankmanagement mit SQL Server • MQTT-Kommunikation & Mosquitto Broker für PLC-HMI-Integration • Versionskontrolle via GitLab"
+        "description": "Softwareintegration (C#/.NET) • Programmierung von Beckhoff TwinCAT 3 SPS • Integration von Sensopart Bildverarbeitungssystemen • SQL Server Datenbankmanagement • MQTT und Mosquitto Broker Kommunikation für SPS-HMI-Integration • Versionskontrolle über GitLab"
       }
     ]
   },
@@ -44,7 +44,7 @@
     "bachelor": "Bachelor in Industrieller Elektronik und Computertechnik",
     "university": "Universität Minho",
     "bYear": "2019–2022",
-    "master": "Master in Steuerung, Automatisierung und Robotik",
+    "master": "Master in Steuerungs-, Automatisierungs- und Robotiktechnik",
     "mYear": "2022–2024"
   },
   "skills": {
@@ -57,7 +57,7 @@
       { "name": "Git", "level": "85", "category": "tools" },
       { "name": "Technische Dokumentation", "level": "85", "category": "tools" },
       { "name": "Agile / Scrum", "level": "85", "category": "tools" },
-      { "name": "Sensorpart Vision", "level": "80", "category": "automation" },
+      { "name": "Sensopart Vision", "level": "80", "category": "automation" },
       { "name": "Universal Robots", "level": "75", "category": "automation" },
       { "name": "URScript / Polyscope", "level": "75", "category": "tools" },
       { "name": "C / C++", "level": "75", "category": "software" },
@@ -84,50 +84,51 @@
       { "key": "automation", "label": "Automatisierung" },
       { "key": "software", "label": "Software" },
       { "key": "frontend", "label": "Frontend" },
-      { "key": "tools", "label": "Tools" }
+      { "key": "tools", "label": "Werkzeuge" }
     ],
     "title": "Meine",
     "title2": "Skills"
   },
   "projects": {
     "title": "Meine",
-    "title2": "Projekte",
+    "title2": "Arbeiten",
     "categories": [
       { "key": "all", "label": "Alle" },
       { "key": "academic", "label": "Akademische Projekte" },
       { "key": "professional", "label": "Berufliche Projekte" },
       { "key": "personal", "label": "Persönlich" }
     ],
-    "subtitle": "Jedes Projekt steht für unzählige Stunden der Problemlösung und diesen magischen Moment, wenn der Roboter endlich genau das tut, was er tun soll.",
+    "subtitle": "Jedes Projekt steht für unzählige Stunden der Problemlösung und diesen magischen Moment, in dem der Roboter endlich genau das tut, was er tun soll.",
     "ctaGithub": "Mein GitHub ansehen",
     "openDemo": "Demo öffnen",
     "openGithub": "GitHub Repository öffnen",
+    "restricted": "[ GESPERRTER CODE // NDA ]",
     "items": [
       {
         "id": 1,
         "title": "Programmierung von Montagemaschinen",
         "category": "professional",
-        "description": "Entwicklung der Automatisierungs- und Steuerungslogik für komplexe Montagemaschinen, einschließlich SPS-Programmierung und HMI-Integration.",
+        "description": "Entwicklung von Automatisierungslogik und Steuerung für komplexe Montagemaschinen, einschließlich SPS-Programmierung und HMI-Integration.",
         "image": "/projects/assembly.png",
-        "tags": ["TwinCAT 3", "C#", "Sensopart Vision", "Industrieautomation", "Funktionsbausteine"],
+        "tags": ["TwinCAT 3", "C#", "Sensopart Vision Integration", "Industrieautomation", "Funktionsbausteine"],
         "demoUrl": "",
         "githubUrl": ""
       },
       {
         "id": 2,
-        "title": "Climate Screening Software",
+        "title": "Klimatest-Screening Software",
         "category": "professional",
-        "description": "Entwicklung einer automatisierten Screening-Software für Klimakammer-Tests mit Datenerfassungssystemen und Echtzeit-Prozessüberwachung.",
+        "description": "Entwicklung einer automatisierten Screening-Software für Tests in Klimakammern, inklusive Datenerfassungssystemen und Echtzeitüberwachung.",
         "image": "/projects/climate_test.png",
         "tags": ["C#", "Datenerfassung", "LIN-Protokoll", "Softwareentwicklung", "Automatisierung"],
         "demoUrl": "",
-        "githubUrl": ""
+        "githubUrl": ""      
       },
       {
         "id": 3,
-        "title": "Depalletierer-Lösung",
+        "title": "Depalettierungslösung",
         "category": "professional",
-        "description": "Implementierung einer Depalletierer-Lösung mit einem Universal Robots UR10 Cobot zur Optimierung der Produktionslinienversorgung.",
+        "description": "Implementierung einer Depalettierungslösung mit einem kollaborativen Roboter (Universal Robots UR10) zur Optimierung der Produktionslinienversorgung.",
         "image": "/projects/depalletizer.png",
         "tags": ["Universal Robots", "ROS2", "Robotik", "Industrie 4.0"],
         "demoUrl": "",
@@ -137,54 +138,63 @@
         "id": 4,
         "title": "Masterarbeit - Navigationssteuerung",
         "category": "academic",
-        "description": "Entwicklung einer Navigationssteuerung und Docking-Manöver für autonome mobile Manipulatoren (KUKA KMR iiwa) in Logistikumgebungen.",
+        "description": "Entwicklung der Navigationssteuerung und Docking-Manöver für autonome mobile Manipulatoren (KUKA KMR iiwa) in Logistikumgebungen.",
         "image": "/projects/thesis.png",
         "tags": ["ROS2", "C++", "KUKA", "AMR", "Autonome Systeme", "Logistiklösungen"],
         "demoUrl": "",
-        "githubUrl": ""
+        "thesisUrl": "/thesis.pdf",
+        "thesisLabel": "Meine Masterarbeit lesen",
+        "youtubeUrls": [
+          { "url": "https://www.youtube.com/watch?v=h8TiymgZLrs", "label": "Video 1" },
+          { "url": "https://www.youtube.com/watch?v=ivut8JgUGbo", "label": "Video 2" },
+          { "url": "https://www.youtube.com/watch?v=uVqOl-3RPE8", "label": "Video 3" },
+          { "url": "https://www.youtube.com/watch?v=AZRuYiUvVCw", "label": "Video 4 - Freie Navigation" },
+          { "url": "https://www.youtube.com/watch?v=GtSJU6fcLuo&t=25s", "label": "Video 5 - Navigation mit Hindernissen" }
+        ]
       },
       {
         "id": 5,
-        "title": "Autonomer Unterwassergleiter",
+        "title": "Autonomer Unterwasser-Glider",
         "category": "academic",
-        "description": "Entwicklung eines autonomen Unterwassergleiters zur Datenerfassung im Nahbereich und zur Umweltüberwachung.",
+        "description": "Entwicklung eines autonomen Unterwasser-Gliders zur Kurzstrecken-Datenerfassung und Umweltüberwachung.",
         "image": "/projects/glider.png",
-        "tags": ["C++", "GPS", "Gleichstrommotor", "Robotik"],
-        "demoUrl": "",
-        "githubUrl": "https://github.com/ivanrcastro"
+        "tags": [ "GPS", "DC-Motoren", "Robotik"],
+        "demoUrl": ""
       },
       {
         "id": 6,
-        "title": "Erstes Portfolio",
+        "title": "Flow Finance Tracker",
         "category": "personal",
-        "description": "Initiales Webentwicklungsprojekt mit Fokus auf Responsive Design und UI/UX-Grundlagen unter Verwendung von Kern-Webtechnologien.",
-        "image": "/projects/firstPortfolio.png",
-        "tags": ["HTML", "CSS", "JavaScript"],
+        "description": "Verabschiede dich von unordentlichen Tabellen und komplexen Apps. Flow Finance ist ein intuitives Tool, das dir hilft, dein Budget zu meistern. Erfasse Ausgaben in Sekunden und behalte die volle Kontrolle über deinen Finanzfluss.",
+        "image": "/projects/flowFinance.png",
+        "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
         "demoUrl": "",
-        "githubUrl": "https://github.com/ivanrcastro/Website_Portfolio"
+        "appLabel": "Flow Finance ausprobieren",
+        "appUrl": "https://flow-finance-rho.vercel.app/"
       },
       {
         "id": 7,
-        "title": "Flow Finance Tracker",
+        "title": "Erstes Portfolio",
         "category": "personal",
-        "description": "Schluss mit unübersichtlichen Tabellen oder komplexen Apps. Flow Finance ist ein effizientes Tool, das dir hilft, dein Budget zu meistern. Erfasse Ausgaben in Sekundenschnelle, überwache deine monatlichen Limits und behalte jeden Tag die volle Kontrolle über deine Finanzen.",
-        "image": "/projects/flowFinance.png",
-        "tags": ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "i18next", "Recharts"],
-        "demoUrl": "DEINE_URL_HIER",
-        "githubUrl": "https://github.com/ivanrcastro/Flow_Finance-"
+        "description": "Erstes Webentwicklungsprojekt mit Fokus auf responsivem Design und UI/UX-Grundlagen unter Verwendung von Basis-Webtechnologien.",
+        "image": "/projects/firstPortfolio.png",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "demoUrl": "",
+        "appLabel": "Mein erstes Portfolio ansehen",
+        "appUrl": "https://ivanribcastro.vercel.app/"
       }
     ]
   },
   "contact": {
     "title": "Kontakt",
     "title2": "aufnehmen",
-    "subtitle": "Interessiert an Industrieautomatisierung oder Software-Engineering? Lassen Sie uns vernetzen.",
+    "subtitle": "Interessiert an Industrieautomation oder Software-Engineering? Lass uns reden.",
     "info": "Kontaktinformationen",
     "email": "ivanrcastro6@gmail.com",
     "location": "Standort",
     "city": "Porto, Portugal",
-    "connect": "Vernetzen Sie sich mit mir",
-    "sendButton": "NACHRICHT_SENDEN_AUSFÜHREN"
+    "connect": "Vernetze dich mit mir",
+    "sendButton": "NACHRICHT_SENDEN"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."
